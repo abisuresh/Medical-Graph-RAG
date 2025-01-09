@@ -1,5 +1,7 @@
 # Fork of Medical-Graph-RAG
 
+NOTE: found that original instructions were leading to some bugs when setting up in my environment (MacOS M2 Pro) so outlined what packages specifically needed to get up and running:
+
 Environment requirements:
 
 * make sure to follow below instructions
