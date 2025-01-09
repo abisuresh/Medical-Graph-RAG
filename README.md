@@ -1,3 +1,38 @@
+Fork of Medical-Graph-RAG
+Conda environment requirements:
+
+make sure to follow below instructions
+please make sure Neo4j GDS library is installed locally pip install graphdatascience
+it is helpful to have Neo4j desktop installed
+in addition, make sure the following packages are installed in the environment:
+pydantic 2.9.2 [can check version with this line python -c "import pydantic; print(pydantic.__version__)"]
+anthropic 0.42.0
+openai 1.58.1
+requests 2.32.3
+numpy
+colorama 0.4.6
+unstructured 0.16.11
+langchain 0.3.13
+langchain-community 0.3.13
+neo4j 5.27.0
+tiktoken 0.8.0
+networkx 3.4.2
+pymilvus 2.5.2
+
+When passing in input, create a directory called dataset_ex and then add in a text file such as the example below called report_0 with arrays of input.
+
+Get Neo4j database running locally if not using a cloud provider by installing Neo4j Desktop. AuraDB seems to have difficulty with the neo4j graph data science plugin which is required for this project.
+
+Neo4j desktop install: https://neo4j.com/download/?utm_source=GSearch&utm_medium=PaidSearch&utm_campaign=Evergreen&utm_content=AMS-Search-SEMCE-DSA-None-SEM-SEM-NonABM&utm_term=&utm_adgroup=DSA&gad_source=1&gclid=Cj0KCQiA4fi7BhC5ARIsAEV1YiZODS9KEEMlA1VOvy7LKhkKnm_XGz8wF-RdV1k2uWXQQj0TE_NNmCwaAn2OEALw_wcB
+
+make sure to create a database through the Neo4j desktop and set the details of username, password and uri as environment variables [NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI] on the terminal in your project directory and environment as mentioned in step 2 below
+make sure that apoc and gds are installed in that database (using the neo4j desktop)
+Key Debugging Note: If you are on a Mac, please run this command in the project directory before running the command to create the graph find . -name '.DS_Store' -type f -delete [i.e. before running step 3 below]
+
+In order to add in prompts to this system, add in a text file called prompt.txt to the root of the directory. Add in questions in the following format to the prompt:
+
+["What is the main symptom of the patient?"], ["The main symptom of the patient is severe chest pain"]
+
 # Medical-Graph-RAG
 We build a Graph RAG System specifically for the medical domain.
 
