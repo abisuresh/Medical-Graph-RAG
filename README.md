@@ -25,13 +25,12 @@ pymilvus 2.5.2
 * Get Neo4j database running locally if not using a cloud provider by installing Neo4j Desktop. AuraDB seems to have difficulty with the neo4j graph data science plugin which is required for this project.
 
 * Neo4j desktop install: https://neo4j.com/download/?utm_source=GSearch&utm_medium=PaidSearch&utm_campaign=Evergreen&utm_content=AMS-Search-SEMCE-DSA-None-SEM-SEM-NonABM&utm_term=&utm_adgroup=DSA&gad_source=1&gclid=Cj0KCQiA4fi7BhC5ARIsAEV1YiZODS9KEEMlA1VOvy7LKhkKnm_XGz8wF-RdV1k2uWXQQj0TE_NNmCwaAn2OEALw_wcB
+- make sure to create a database through the Neo4j desktop and set the details of username, password and uri as environment variables [NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI] on the terminal in your project directory and environment as mentioned in step 2 below
+- make sure that apoc and gds are installed in that database (using the neo4j desktop)
 
-** make sure to create a database through the Neo4j desktop and set the details of username, password and uri as environment variables [NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI] on the terminal in your project directory and environment as mentioned in step 2 below
-** make sure that apoc and gds are installed in that database (using the neo4j desktop)
+==> Key Debugging Note: If you are on a Mac, please run this command in the project directory before running the command to create the graph find . -name '.DS_Store' -type f -delete [i.e. before running step 3 below]
 
-** Key Debugging Note: If you are on a Mac, please run this command in the project directory before running the command to create the graph find . -name '.DS_Store' -type f -delete [i.e. before running step 3 below] **
-
-In order to add in prompts to this system, add in a text file called prompt.txt to the root of the directory. Add in questions in the following format to the prompt:
+==> In order to add in prompts to this system, add in a text file called prompt.txt to the root of the directory. Add in questions in the following format to the prompt:
 
 ["What is the main symptom of the patient?"], ["The main symptom of the patient is severe chest pain"]
 
