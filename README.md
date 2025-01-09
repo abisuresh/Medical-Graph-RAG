@@ -32,7 +32,7 @@ pymilvus 2.5.2
 
 ==> In order to add in prompts to this system, add in a text file called prompt.txt to the root of the directory. Add in questions in the following format to the prompt:
 
-["What is the main symptom of the patient?"], ["The main symptom of the patient is severe chest pain"]
+["What is the main symptom of the patient?"], ["The main symptom of the patient is right lower quadrant pain"]
 
 # Medical-Graph-RAG
 We build a Graph RAG System specifically for the medical domain.
