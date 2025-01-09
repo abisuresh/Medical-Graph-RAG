@@ -1,12 +1,12 @@
 # Fork of Medical-Graph-RAG
 
-* Conda environment requirements:
+Environment requirements:
 
-make sure to follow below instructions
-please make sure Neo4j GDS library is installed locally pip install graphdatascience
-it is helpful to have Neo4j desktop installed
-in addition, make sure the following packages are installed in the environment:
-pydantic 2.9.2 [can check version with this line python -c "import pydantic; print(pydantic.__version__)"]
+* make sure to follow below instructions
+* please make sure Neo4j GDS library is installed locally `pip install graphdatascience`
+* it is helpful to have Neo4j desktop installed
+* in addition, make sure the following packages are installed in the environment:
+pydantic 2.9.2 [can check version with this line `python -c "import pydantic; print(pydantic.__version__)"`]
 anthropic 0.42.0
 openai 1.58.1
 requests 2.32.3
