@@ -1,5 +1,6 @@
-Fork of Medical-Graph-RAG
-Conda environment requirements:
+# Fork of Medical-Graph-RAG
+
+* Conda environment requirements:
 
 make sure to follow below instructions
 please make sure Neo4j GDS library is installed locally pip install graphdatascience
